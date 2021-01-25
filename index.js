@@ -1,12 +1,22 @@
 var button = document.getElementById("button");
-var input = document.getElementById("input");
-var div = document.getElementById("div")
+// var div = document.getElementById("div")
 
-button.addEventListener("click", function () {
-    if (div.style.display === "none") {
-        div.style.display = "block"
+// button.addEventListener("click", function () {
+//     if (div.style.display === "none") {
+//         div.style.display = "block"
+//     }
+//     else {
+//         div.style.display = "none"
+//     }
+// })
+
+$("button").click(function(){
+    $("input").toggle();
+    if (button.className==="active"){
+        button.className="button"
     }
-    else {
-        div.style.display = "none"
+    else
+    {
+        button.className="active"
     }
-})
+});
